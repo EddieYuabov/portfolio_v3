@@ -1,0 +1,22 @@
+.landing_page_container {
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.name_container {
+    /* align-items: center; */
+    margin-top: -40px;
+    text-align: center;
+}
+
+.name_container span {
+    color: white;
+    font-size: 130px;
+    font-weight: 200;
+}
+
+.name_container .descrition span {
+    font-size: 20px;
+}

@@ -1,0 +1,11 @@
+.nav {
+    position: sticky;
+    width: 100%;
+    background-color: rgb(83, 92, 100);
+}
+
+.nav .logo {
+    color: white;
+    font-size: 35px;
+    padding: 20px 50px
+}
