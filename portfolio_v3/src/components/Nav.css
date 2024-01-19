@@ -1,11 +1,32 @@
 .nav {
+    display: flex;
     position: sticky;
+    top: 0;
     width: 100%;
     background-color: rgb(83, 92, 100);
+    padding: 20px;
 }
 
 .nav .logo {
+    position: absolute;
     color: white;
+    top: 0;
+    padding-top: 5px;
     font-size: 35px;
-    padding: 20px 50px
+    /* padding: 20px; */
+    /* width: 10%; */
+}
+
+.nav_options {
+    box-sizing: border-box;
+    display: flex;
+    width: calc(100% - 40px);
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.nav_options span {
+    color: white;
 }
