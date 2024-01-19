@@ -1,8 +1,11 @@
 .landing_page_container {
-    height: 100vh;
+    background-color: rgb(25, 28, 33);
+    height: 55vh;
     display: grid;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: 1;
 }
 
 .name_container {
@@ -19,4 +22,91 @@
 
 .name_container .descrition span {
     font-size: 20px;
+}
+
+.background_div {
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+.slider-thumb-1 {
+    position: absolute;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 450px;
+    margin-left: 40px;
+    /* background: #6c9667; */
+    /* background: #909667; */
+    background: #f2ff00;
+    border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+    will-change: border-radius, transform, opacity;
+    animation: sliderShape 5s linear infinite;
+    /* display: block; */
+    z-index: -1;
+    -webkit-animation: sliderShape 5s linear infinite;
+    opacity: 50%;
+    filter: blur(6px);
+}
+
+.slider-thumb-2 {
+    position: absolute;
+    content: "";
+    width: 450px;
+    height: 450px;
+    margin-left: 225px;
+    margin-top: 300px;
+    background: #ff0000;
+    border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+    will-change: border-radius, transform, opacity;
+    animation: sliderShape 5s linear infinite;
+    display: block;
+    z-index: -1;
+    -webkit-animation: sliderShape 4s linear infinite;
+    opacity: 50%;
+    filter: blur(6px);
+}
+
+.slider-thumb-3 {
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    margin-left: 360px;
+    background: #0084ff;
+    border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+    will-change: border-radius, transform, opacity;
+    animation: sliderShape 5s linear infinite;
+    display: block;
+    z-index: -1;
+    -webkit-animation: sliderShape 3s linear infinite;
+    opacity: 50%;
+    filter: blur(6px);
+}
+
+
+@keyframes sliderShape {
+
+    0%,
+    100% {
+        border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+        transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+    }
+
+    34% {
+        border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+        transform: translate3d(0, 5px, 0) rotateZ(0.01deg);
+    }
+
+    50% {
+        transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+    }
+
+    67% {
+        border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+        transform: translate3d(0, -3px, 0) rotateZ(0.01deg);
+    }
 }

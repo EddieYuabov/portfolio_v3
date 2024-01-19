@@ -5,6 +5,11 @@ const LandingPage = () => {
         
         <div className="landing_page_container">
             <div className="name_container">
+            <div className="background_div">
+                    <div className="slider-thumb-1"></div>
+                    <div className="slider-thumb-2"></div>
+                    <div className="slider-thumb-3"></div>
+                </div>
                 <span>EDWARD YUABOV</span>
                 <div className="descrition">
                     <span>SOFTWARE ENGINEER, FRONT END & APP DEVELOPER</span>
