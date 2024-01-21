@@ -2,9 +2,8 @@
     display: flex;
     position: sticky;
     top: 0;
-    width: 100%;
     background-color: rgb(19, 23, 28);
-    padding-top: 25px;
+    padding: 20px;
     z-index: 2;
 }
 
@@ -12,11 +11,9 @@
     position: absolute;
     color: white;
     top: 0;
-    padding-top: 5px;
+    padding-top: 8px;
     padding-left: 15px;
     font-size: 35px;
-    /* padding: 20px; */
-    /* width: 10%; */
 }
 
 .nav_options {
@@ -31,5 +28,13 @@
 
 .nav_options span {
     color: white;
-    padding-bottom: 10px;
+    font-size: 15px;
+    transition: 200ms;
+    padding: 2px 2px;
+    cursor: pointer;
+}
+
+.nav_options span:hover {
+    transition: 200ms;
+    color: rgb(183, 47, 47);
 }
