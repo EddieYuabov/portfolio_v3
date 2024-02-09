@@ -13,7 +13,7 @@ const About = () => {
                         <span>CODING</span>
                         <div className="about_coding">
                             <p>
-                                I'm a full stack developer with a passion for learning new things. I have experience working with a variety of programming languages and frameworks, including JavaScript, Python, C++, and more. Whether it's working on complex algorithms or building sleek and responsive user interfaces, I love tackling new challenges and creating innovative solutions.
+                                
                             </p>
                         </div>
                     </div>
@@ -24,7 +24,7 @@ const About = () => {
                             <span>HOBBIES</span>
                             <div className="about_coding">
                                 <p>
-                                    I'm a full stack developer with a passion for learning new things. I have experience working with a variety of programming languages and frameworks, including JavaScript, Python, C++, and more. Whether it's working on complex algorithms or building sleek and responsive user interfaces, I love tackling new challenges and creating innovative solutions.
+                                    
                                 </p>
                             </div>
                         </div>
@@ -34,7 +34,7 @@ const About = () => {
                             <span>MUSIC</span>
                             <div className="about_coding">
                                 <p>
-                                    I'm a full stack developer with a passion for learning new things. I have experience working with a variety of programming languages and frameworks, including JavaScript, Python, C++, and more. Whether it's working on complex algorithms or building sleek and responsive user interfaces, I love tackling new challenges and creating innovative solutions.
+                                    
                                 </p>
                             </div>
                         </div>
