@@ -5,7 +5,7 @@
     /* align-items: center; */
     min-height: 100vh;
     /* padding: 125px 0px 0px 0px; */
-    font-weight: 200;
+    font-weight: 300;
     padding-bottom: 50px;
 }
 
@@ -17,15 +17,17 @@
     padding-top: 10%;
     /* position:absolute; */
     /* padding-bottom: 10px; */
-    font-size: 20px;
-    color: #a7f8ff;
+    font-size: 25px;
+    color: rgb(0, 247, 202);
+    margin: 0px;
 }
 
 #projects-subfont {
     padding-left: 3%;
     padding-bottom: 20px;
-    font-size: 25px;
-    color: #72a2a6;
+    font-size: 35px;
+    color: rgb(23, 114, 97);
+    margin: 0px;
 }
 
 #websites-layout {
@@ -164,4 +166,22 @@
 
 .font {
     font-family: 'Nunito', sans-serif;
+}
+
+@media (max-width:1380px) {
+
+    #projects-layout {
+        display: grid;
+        align-items: center;
+        text-align: center;
+        grid-template-columns: auto;
+    }
+
+    #websites-layout {
+        display: block;
+    }
+
+    #projects-font {
+        padding-top: 15%;
+    }
 }
