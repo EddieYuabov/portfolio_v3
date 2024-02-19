@@ -1,40 +1,80 @@
-.nav {
+#logo_layout {
     display: flex;
-    position: sticky;
-    top: 0;
-    background-color: rgb(19, 23, 28);
-    padding: 20px;
-    z-index: 2;
+    color: rgb(220, 251, 241);
+    font-weight: 300;
+    position: left;
 }
 
-.nav .logo {
-    position: absolute;
-    color: white;
-    top: 0;
-    padding-top: 8px;
-    padding-left: 15px;
-    font-size: 35px;
-}
-
-.nav_options {
-    box-sizing: border-box;
+#logo {
     display: flex;
-    width: calc(100% - 40px);
     justify-content: center;
-    gap: 40px;
     align-items: center;
-    text-align: center;
-}
-
-.nav_options span {
-    color: white;
-    font-size: 15px;
-    transition: 200ms;
-    padding: 2px 2px;
+    margin-left: 50px;
     cursor: pointer;
 }
 
-.nav_options span:hover {
-    transition: 200ms;
-    color: rgb(183, 47, 47);
+#logo span {
+    padding-top: 8px;
+    font-size: 35px;
+}
+
+#logo p {
+    color: rgb(137, 254, 217);
+    display: flex;
+    font-size: 40px;
+    font-weight: 500;
+    padding: 0px 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+#nav {
+    position: fixed;
+    /* box-shadow: 1px 2px 15px 2px; */
+    top: 0;
+    display: grid;
+    grid-template-columns: 7fr 1fr;
+    padding: 0px 0px;
+    backdrop-filter: blur(50px);
+    z-index: 10;
+}
+
+#options_layout {
+    display: flex;
+    gap: 40px;
+    margin-right: 60px;
+}
+
+#options_layout span {
+    display: grid;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 300;
+    /* transition: 100ms; */
+    margin: 20px 0px;
+    color: rgb(220, 251, 241);
+}
+
+#options_layout span:hover {
+    color: rgb(0, 247, 202);
+    cursor: pointer;
+}
+
+#options_layout a {
+    color: rgb(220, 251, 241);
+    display: grid;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 300;
+    /* transition: 100ms; */
+    margin: 20px 0px;
+}
+
+#options_layout a:hover {
+    color: rgb(247, 231, 0);
+    cursor: pointer;
 }
