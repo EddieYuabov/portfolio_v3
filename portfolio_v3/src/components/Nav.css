@@ -26,6 +26,7 @@
     padding: 0px 5px;
     align-items: center;
     justify-content: center;
+    margin: 0px;
 }
 
 a {
@@ -38,7 +39,6 @@ a {
     top: 0;
     display: grid;
     grid-template-columns: 7fr 1fr;
-    padding: 0px 0px;
     backdrop-filter: blur(50px);
     z-index: 10;
 }
@@ -77,4 +77,31 @@ a {
 #options_layout a:hover {
     color: rgb(247, 231, 0);
     cursor: pointer;
+}
+
+.nav_icon {
+    display: none;
+}
+
+@media (max-width:1180px) {
+    .nav_icon {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        margin-right: 10px;
+    }
+
+    #options_layout {
+        display: none;
+    }
+
+    .nav_container {
+        display: flex;
+        width: 100%;
+        margin-right: 150px;
+    }
+
+    svg {
+        cursor: pointer;
+    }
 }

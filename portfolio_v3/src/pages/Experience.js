@@ -10,16 +10,16 @@ const Experience = () => {
                 <p id="projects-subfont">WHAT IVE WORKED ON</p>
             </div>
             <div id="websites-layout">
-                <div class="website-img-layout">
-                    <div class="popup">
-                        <div class="popup_text">
+                <div className="website-img-layout">
+                    <div className="popup">
+                        <div className="popup_text">
                             <p>
                                 General Asssembly
                             </p>
                         </div>
-                        <div class="popup_button">
+                        <div className="popup_button">
                             <a href="https://generalassemb.ly/" target="_blank" rel="noopener noreferrer"
-                                class="button">
+                                className="button">
                                 Go to Project
                             </a>
                         </div>
@@ -27,14 +27,14 @@ const Experience = () => {
                     <img id='blog-img'
                         src="https://ga-website-production-herokuapp-com.global.ssl.fastly.net/packs/media/assets/images/logo_1200_by_627-e2f4e80d2e8073fa1b8c0a2bb36f2d46.jpg" />
                 </div>
-                <div class="website-img-layout">
-                    <div class="popup">
-                        <div class="popup_text">
+                <div className="website-img-layout">
+                    <div className="popup">
+                        <div className="popup_text">
                             <p>
                                 1UP
                             </p>
                         </div>
-                        <div class="popup_button">
+                        <div className="popup_button">
                             <a href="https://1up.ai/" target="_blank" rel="noopener noreferrer" class="button">
                                 Go to Project
                             </a>
@@ -51,9 +51,9 @@ const Experience = () => {
                 <p id="projects-subfont">IN MY SPARE TIME</p>
             </div>
             <div id="projects-layout">
-                <div class="project-img-layout">
-                    <div class="popup">
-                        <div class="popup_text">
+                <div className="project-img-layout">
+                    <div className="popup">
+                        <div className="popup_text">
                             <p>
                                 The Hogwarts Project showcases an application that displays information about all the
                                 fictional students
@@ -65,9 +65,9 @@ const Experience = () => {
                                 a digital format.
                             </p>
                         </div>
-                        <div class="popup_button">
+                        <div className="popup_button">
                             <a href="https://salty-taiga-60643.herokuapp.com/" target="_blank" rel="noopener noreferrer"
-                                class="button">
+                                className="button">
                                 Go to Project
                             </a>
                         </div>
@@ -75,9 +75,9 @@ const Experience = () => {
                     <img id='hogwarts-img'
                         src="https://phantom-marca.unidadeditorial.es/f21a9f12a57a63c7ea4ee14e048aca9f/resize/1320/f/jpg/assets/multimedia/imagenes/2023/01/25/16746808818281.jpg" />
                 </div>
-                <div class="project-img-layout">
-                    <div class="popup">
-                        <div class="popup_text">
+                <div className="project-img-layout">
+                    <div className="popup">
+                        <div className="popup_text">
                             <p>
                                 My MCU project showcases a comprehensive database of all the movies from the Marvel
                                 Cinematic Universe
@@ -88,9 +88,9 @@ const Experience = () => {
                                 peek of the film before watching it.
                             </p>
                         </div>
-                        <div class="popup_button">
+                        <div className="popup_button">
                             <a href="https://mcu.herokuapp.com" target="_blank" rel="noopener noreferrer"
-                                class="button">
+                                className="button">
                                 Go to Project
                             </a>
                         </div>
@@ -98,9 +98,9 @@ const Experience = () => {
                     <img id='marvel-img'
                         src="https://images.unsplash.com/photo-1612036782180-6f0b6cd846fe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bWFydmVsfGVufDB8fDB8fA%3D%3D&w=1000&q=80" />
                 </div>
-                <div class="project-img-layout">
-                    <div class="popup">
-                        <div class="popup_text">
+                <div className="project-img-layout">
+                    <div className="popup">
+                        <div className="popup_text">
                             <p>
                                 My virtual blackjack game offers an exciting and interactive virtual card game
                                 experience. In this game,
@@ -111,18 +111,18 @@ const Experience = () => {
                                 experience for both novice and seasoned Blackjack players.
                             </p>
                         </div>
-                        <div class="popup_button">
+                        <div className="popup_button">
                             <a href="https://parallel-holiday.surge.sh/" target="_blank" rel="noopener noreferrer"
-                                class="button">
+                                className="button">
                                 Go to Project
                             </a>
                         </div>
                     </div>
                     <img id='blackjack-img' src="https://crescent.edu/uploads/editor/images/Blackjack.png" />
                 </div>
-                <div class="project-img-layout">
-                    <div class="popup">
-                        <div class="popup_text">
+                <div className="project-img-layout">
+                    <div className="popup">
+                        <div className="popup_text">
                             <p>
                                 The Blog Project showcases a comprehensive blogging platform that allows users to share
                                 their day-to-day
@@ -133,9 +133,9 @@ const Experience = () => {
                                 management.
                             </p>
                         </div>
-                        <div class="popup_button">
+                        <div className="popup_button">
                             <a href="https://still-wave-91765.herokuapp.com" target="_blank" rel="noopener noreferrer"
-                                class="button">
+                                className="button">
                                 Go to Project
                             </a>
                         </div>

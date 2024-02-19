@@ -18,9 +18,7 @@ function App() {
   
   const Gradient = () => {
     return(
-      <>
         <div id="gradient"></div>
-      </>
     )
   }
 
