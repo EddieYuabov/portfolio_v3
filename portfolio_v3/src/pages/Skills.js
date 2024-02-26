@@ -9,7 +9,7 @@ const Skills = () => {
                 <p id="skills-subfont">WHAT I CAN DO</p>
             </div>
             <div id="skills-layout">
-                <div classNameName="skill-container">
+                <div className="skill-container">
                     <div className="img_container">
                         <img className='skill-img' src="https://cdn.worldvectorlogo.com/logos/html-1.svg" />
                     </div>

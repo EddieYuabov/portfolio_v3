@@ -35,7 +35,7 @@ const Experience = () => {
                             </p>
                         </div>
                         <div className="popup_button">
-                            <a href="https://1up.ai/" target="_blank" rel="noopener noreferrer" class="button">
+                            <a href="https://1up.ai/" target="_blank" rel="noopener noreferrer" className="button">
                                 Go to Project
                             </a>
                         </div>
