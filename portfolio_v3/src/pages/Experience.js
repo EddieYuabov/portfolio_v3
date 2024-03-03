@@ -98,51 +98,31 @@ const Experience = () => {
                     <img id='marvel-img'
                         src="https://images.unsplash.com/photo-1612036782180-6f0b6cd846fe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bWFydmVsfGVufDB8fDB8fA%3D%3D&w=1000&q=80" />
                 </div>
-                <div className="project-img-layout">
-                    <div className="popup">
-                        <div className="popup_text">
-                            <p>
-                                My virtual blackjack game offers an exciting and interactive virtual card game
-                                experience. In this game,
-                                a CPU deals cards to the player, and the objective is to have a deck of cards that has a
-                                sum closest to
-                                the number 21 without exceeding it. The game is designed to provide a challenging and
-                                entertaining
-                                experience for both novice and seasoned Blackjack players.
-                            </p>
-                        </div>
-                        <div className="popup_button">
-                            <a href="https://parallel-holiday.surge.sh/" target="_blank" rel="noopener noreferrer"
-                                className="button">
-                                Go to Project
-                            </a>
-                        </div>
-                    </div>
-                    <img id='blackjack-img' src="https://crescent.edu/uploads/editor/images/Blackjack.png" />
                 </div>
-                <div className="project-img-layout">
-                    <div className="popup">
-                        <div className="popup_text">
-                            <p>
-                                The Blog Project showcases a comprehensive blogging platform that allows users to share
-                                their day-to-day
-                                experiences with others. The website is built using modern web technologies, including
-                                HTML, CSS, and
-                                JavaScript. Node.js with Express for back-end development, and MongoDB with Mongoose for
-                                data
-                                management.
-                            </p>
+                <div className="project_layout_centered">
+                    <div className="project-img-layout">
+                        <div className="popup">
+                            <div className="popup_text">
+                                <p>
+                                    My virtual blackjack game offers an exciting and interactive virtual card game
+                                    experience. In this game,
+                                    a CPU deals cards to the player, and the objective is to have a deck of cards that has a
+                                    sum closest to
+                                    the number 21 without exceeding it. The game is designed to provide a challenging and
+                                    entertaining
+                                    experience for both novice and seasoned Blackjack players.
+                                </p>
+                            </div>
+                            <div className="popup_button">
+                                <a href="https://parallel-holiday.surge.sh/" target="_blank" rel="noopener noreferrer"
+                                    className="button">
+                                    Go to Project
+                                </a>
+                            </div>
                         </div>
-                        <div className="popup_button">
-                            <a href="https://still-wave-91765.herokuapp.com" target="_blank" rel="noopener noreferrer"
-                                className="button">
-                                Go to Project
-                            </a>
-                        </div>
-                    </div>
-                    <img id='blog-img' src="https://www-static.cdn-one.com/cmsimages/en_what-is-a-blog-1.png" />
+                        <img id='blackjack-img' src="https://crescent.edu/uploads/editor/images/Blackjack.png" />
+                    </div>  
                 </div>
-            </div>
         </div>
     </div>
     )

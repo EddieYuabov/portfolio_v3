@@ -1,6 +1,5 @@
 import { HTML, CSS, JavaScript, ReactJs, Python, CPLus, NodeJs, VueJs, Flask, AWS, SQL, MongoDB } from "../icons"
 import "./Skills.css"
-import "../images/ISO_C++_Logo.svg.png"
 
 const Skills = () => {
 

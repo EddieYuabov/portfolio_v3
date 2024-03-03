@@ -39,6 +39,7 @@ a {
     grid-template-columns: 7fr 1fr;
     backdrop-filter: blur(50px);
     z-index: 10;
+    height: 80px;
 }
 
 #options_layout {
@@ -84,6 +85,7 @@ a {
         width: 100%;
         grid-template-columns: 1fr;
         grid-template-rows: 0fr;
+        height: 55px;
     }
 
     .nav.open {
@@ -133,7 +135,6 @@ a {
 
     .nav.open #logo_layout {
         position: absolute;
-        margin-top: -11px;
     }
 
     .nav.open .options_layout {
@@ -168,7 +169,7 @@ a {
         cursor: pointer;
     }
 
-    .nav.open span:hover {
+    .nav.open .options_layout span:hover {
         color: rgb(0, 247, 202);
         cursor: pointer;
     }
@@ -192,5 +193,9 @@ a {
     .nav.open a:hover {
         color: rgb(247, 231, 0);
         cursor: pointer;
+    }
+
+    .nav.open .dropdown_icon {
+        padding-top: 10px;
     }
 }

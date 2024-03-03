@@ -43,6 +43,12 @@
     grid-template-columns: 1fr 1fr;
 }
 
+.project_layout_centered {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
 .popup {
     position: absolute;
     display: grid;

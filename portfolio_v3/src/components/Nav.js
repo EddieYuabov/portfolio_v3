@@ -4,23 +4,36 @@ import { useState, useEffect} from "react"
 
 const Nav = () => {
     const [isVisible, setIsVisible] = useState(false)
+    const [isSmallScreen, setIsSmallScreen] = useState(false)
 
-    useEffect(() => {
-        let delayTimeout;
-        if (isVisible) {
-            delayTimeout = setTimeout(() => {
-                setIsVisible(true);
-                console.log("works")
-            }, 1000)
-        }
+    // useEffect(() => {
+    //     let delayTimeout;
+    //     if (isVisible) {
+    //         delayTimeout = setTimeout(() => {
+    //             setIsVisible(true);
+    //             console.log("works")
+    //         }, 1000)
+    //     }
     
-        return () => clearTimeout(delayTimeout);
-    }, [isVisible]);
+    //     return () => clearTimeout(delayTimeout);
+    // }, [isVisible]);
+    useEffect(() => {
+        const handleResize = () => {
+            setIsSmallScreen(window.innerWidth < 1180);
+        };
+
+        handleResize(); // Call the function once to set initial state
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
 
     const toggleMenu = () => {
         setIsVisible(prev => !prev)
     }
-    
     const navID = `nav ${isVisible? `open` :null}`
     const optionsLayoutClass = `options_layout ${isVisible ? 'translate' : ''}`
     
@@ -31,41 +44,37 @@ const Nav = () => {
 
     return(
         <>
-        {isVisible? 
+        {isVisible && isSmallScreen? 
             <nav className={navID}>
-                                <div id="logo_layout">
-                                    <div id="logo" onClick={() =>bringToView('landing')}>
-                                        <span>E</span>
-                                        <p>|</p><span>Y</span>
-                                    </div>
-                                </div>
-                                <div className="dropdown_icon">
-                                    <CloseNavIcon className="icon" onClick={() => toggleMenu()}/>
-                                </div>
-                            <div className={optionsLayoutClass}>
-                                    <div className="centered_options">
-                                        <span onClick={() => bringToView('about')}>ABOUT</span>
-                                    </div>
-                                <div className="centered_options">
-                                    <span onClick={() => bringToView('skills')}>SKILLS</span>
-                                </div>
-                                <div className="centered_options">
-                                    <span onClick={() => bringToView('projects')}>EXPERIENCE</span>
-                                </div>
-                                <div className="centered_options">
-                                    <a href="https://docs.google.com/document/d/1DVT0-fNo3kYleiR-_dJPom5PQoEmey-wAqZJ0GNS3_4/edit?usp=sharing"
-                                        target="_blank" rel="noopener noreferrer">
-                                        <p>RESUME</p>
-                                    </a>
-                                </div>
-                            </div>
-                </nav>
-                    :
+                <div id="logo_layout">
+                    <div id="logo" onClick={() =>bringToView('landing')}>
+                        <span>E</span><p>|</p><span>Y</span>
+                    </div>
+                </div>
+                <div className="dropdown_icon">
+                    <CloseNavIcon className="icon" onClick={() => toggleMenu()}/>
+                </div>
+                <div className={optionsLayoutClass}>
+                    <div className="centered_options">
+                        <span onClick={() => bringToView('about')}>ABOUT</span>
+                    </div>
+                    <div className="centered_options">
+                        <span onClick={() => bringToView('skills')}>SKILLS</span>
+                    </div>
+                    <div className="centered_options">
+                        <span onClick={() => bringToView('projects')}>EXPERIENCE</span>
+                    </div>
+                    <div className="centered_options">
+                        <a href="https://docs.google.com/document/d/1DVT0-fNo3kYleiR-_dJPom5PQoEmey-wAqZJ0GNS3_4/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+                            <p>RESUME</p>
+                        </a>
+                    </div>
+                </div>
+                </nav> :
                     <nav className={navID}>
                     <div id="logo_layout">
                         <div id="logo" onClick={() => document.getElementById('landing').scrollIntoView({ behavior: "smooth" })}>
-                            <span>E</span>
-                            <p>|</p><span>Y</span>
+                            <span>E</span><p>|</p><span>Y</span>
                         </div>
                     </div>
                     <div className="nav_container">
