@@ -191,3 +191,52 @@
         padding-top: 15%;
     }
 }
+
+@media (max-width:500px) {
+    #websites-layout {
+        display: grid;
+        padding: 0px 10px;
+        gap: 15px;
+    }
+
+    .website-img-layout {
+        height: 100%;
+        width: 100%;
+    }
+
+    .popup {
+        height: 100%;
+        width: 100%;
+        margin: 0px;
+        padding: 1px
+    }
+
+    .website-img-layout img,
+    .project-img-layout img {
+        height: 250px;
+        width: 100%;
+    }
+
+    .website-img-layout,
+    .project-img-layout {
+        height: 250px;
+        width: 100%;
+        margin: 0px;
+    }
+
+    .popup_text p {
+        font-size: 10px;
+    }
+
+    .website-img-layout:hover,
+    .project-img-layout:hover {
+        img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .popup {
+            z-index: 1;
+        }
+    }
+}

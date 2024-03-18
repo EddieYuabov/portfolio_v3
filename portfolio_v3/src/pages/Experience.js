@@ -20,7 +20,7 @@ const Experience = () => {
                         <div className="popup_button">
                             <a href="https://generalassemb.ly/" target="_blank" rel="noopener noreferrer"
                                 className="button">
-                                Go to Project
+                                Go to Website
                             </a>
                         </div>
                     </div>
@@ -36,7 +36,7 @@ const Experience = () => {
                         </div>
                         <div className="popup_button">
                             <a href="https://1up.ai/" target="_blank" rel="noopener noreferrer" className="button">
-                                Go to Project
+                                Go to Website
                             </a>
                         </div>
                     </div>

@@ -84,3 +84,29 @@
         justify-content: center;
     }
 }
+
+@media (max-width:500px) {
+    #about {
+        padding: 225px 10px 0px 10px;
+    }
+
+    .about-par {
+        color: #d7d7ff;
+        padding: 0px 0% 50px 0%;
+        font-size: 18px;
+        /* word-spacing: 1px;
+        line-height: 1.5;  */
+    }
+
+    .about_container {
+        width: auto;
+    }
+
+    #portfolio-pic {
+        margin-top: 10px;
+        height: 80%;
+        width: 100%;
+        box-shadow: 0px 0px 10px 2px;
+        margin-bottom: 100px;
+    }
+}
