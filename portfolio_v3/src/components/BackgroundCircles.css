@@ -1,11 +1,8 @@
 .slider-thumb-1 {
     position: absolute;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    width: 450px;
-    height: 450px;
-    margin-left: 125px;
+    width: 30vw;
+    height: 30vw;
+    margin-left: 18%;
     background: rgb(163, 248, 232);
     border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
     will-change: border-radius, transform, opacity;
@@ -13,32 +10,30 @@
     z-index: -1;
     -webkit-animation: sliderShape 5s linear infinite;
     opacity: 50%;
-    filter: blur(6px);
+    filter: blur(20px);
 }
 
 .slider-thumb-2 {
     position: absolute;
-    content: "";
-    width: 450px;
-    height: 450px;
-    margin-left: 300px;
-    margin-top: 500px;
+    width: 30vw;
+    height: 30vw;
+    margin-left: 30%;
+    margin-top: 40%;
     background: rgb(23, 114, 97);
     border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
     will-change: border-radius, transform, opacity;
     animation: sliderShape 5s linear infinite;
-    display: block;
     z-index: -1;
     -webkit-animation: sliderShape 4s linear infinite;
     opacity: 50%;
-    filter: blur(6px);
+    filter: blur(20px);
 }
 
 .slider-thumb-3 {
     position: absolute;
-    width: 450px;
-    height: 450px;
-    margin-left: 430px;
+    width: 30vw;
+    height: 30vw;
+    margin-left: 40%;
     background: rgb(0, 247, 202);
     border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
     will-change: border-radius, transform, opacity;
@@ -47,53 +42,30 @@
     z-index: -1;
     -webkit-animation: sliderShape 3s linear infinite;
     opacity: 50%;
-    filter: blur(6px);
+    filter: blur(20px);
 }
 
-@media (max-width:1024px) {
+
+@media (min-width:2250px) {
     .slider-thumb-1 {
-        position: absolute;
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        margin-top: 0px;
-        margin-left: -275px;
-        background: rgb(163, 248, 232);
-        border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+        width: 670px;
+        height: 670px;
+        margin-left: 405px;
     }
 
     .slider-thumb-2 {
-        position: absolute;
-        content: "";
-        margin-left: 0px;
-        margin-top: 500px;
-        background: rgb(23, 114, 97);
-        border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
-        will-change: border-radius, transform, opacity;
-        animation: sliderShape 5s linear infinite;
-        display: block;
-        z-index: -1;
-        -webkit-animation: sliderShape 4s linear infinite;
-        opacity: 50%;
-        filter: blur(6px);
+        width: 670px;
+        height: 670px;
+        margin-left: 660px;
+        margin-top: 900px;
     }
 
     .slider-thumb-3 {
-        position: absolute;
-        margin-top: 0px;
-        margin-left: 250px;
-        background: rgb(0, 247, 202);
-        border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
-        will-change: border-radius, transform, opacity;
-        animation: sliderShape 5s linear infinite;
-        display: block;
-        z-index: -1;
-        -webkit-animation: sliderShape 3s linear infinite;
-        opacity: 50%;
-        filter: blur(6px);
+        width: 670px;
+        height: 670px;
+        margin-left: 900px;
     }
 }
-
 
 @keyframes sliderShape {
 
@@ -119,13 +91,6 @@
 }
 
 @media (max-width:500px) {
-    .background_div {
-        display: flex;
-        justify-content: none;
-        width: 100%;
-        align-items: center;
-        text-align: center;
-    }
 
     .slider-thumb-1 {
         margin-left: -45%;

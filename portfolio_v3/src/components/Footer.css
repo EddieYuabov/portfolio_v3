@@ -52,3 +52,9 @@ footer {
     justify-content: space-evenly;
     padding: 20px 200px 0px 200px;
 }
+
+@media (max-width:500px) {
+    #footer-tags {
+        padding: 0px;
+    }
+}

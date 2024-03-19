@@ -17,12 +17,13 @@
 
 .name_container span {
     color: white;
-    font-size: 130px;
+    font-size: 10.9vw;
     font-weight: 100;
 }
 
 .name_container .descrition span {
-    font-size: 20px;
+    font-size: 30px;
+    font-weight: 200;
 }
 
 .background_div {
@@ -33,11 +34,32 @@
     text-align: center;
 }
 
-@media (max-width:1024px) {
+
+@media (min-width:2250px) {
+    .name_container span {
+        color: white;
+        font-size: 245px;
+        font-weight: 100;
+    }
+
+    .name_container .descrition span {
+        font-size: 30px;
+        font-weight: 200;
+    }
+}
+
+
+@media (max-width:800px) {
+    .name_container .descrition span {
+        font-size: 3.8vw;
+    }
+
+}
+
+/* @media (max-width:1024px) {
 
     .landing_page_container {
         background-color: rgb(25, 28, 33);
-        /* background-color: rgb(184, 246, 255); */
         height: 100vh;
         display: grid;
         position: relative;
@@ -53,12 +75,11 @@
 
     .name_container span {
         color: white;
-        font-size: 100px;
         font-weight: 100;
     }
 
     .name_container .descrition span {
-        font-size: 20px;
+        font-size: 1.8vw;
     }
 
     .background_div {
@@ -68,9 +89,27 @@
         align-items: center;
         text-align: center;
     }
+} */
+
+
+
+
+@media (max-width:500px) {
+    .background_div {
+        display: flex;
+        justify-content: none;
+        /* width: 70%; */
+        align-items: none;
+        text-align: none;
+    }
+
+    .name_container span {
+        color: white;
+        font-size: 10.9vw;
+        font-weight: 100;
+    }
+
+    .name_container .descrition span {
+        font-size: 30px;
+    }
 }
-
-
-
-
-@media (max-width:500px) {}
