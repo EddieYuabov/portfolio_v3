@@ -1,5 +1,6 @@
 import './App.css';
 import Footer from './components/Footer';
+import Logo from './components/Logo';
 import Nav from './components/Nav';
 import About from './pages/About';
 import Experience from './pages/Experience';
@@ -31,6 +32,7 @@ function App() {
       <About/>
       <Skills/>
       <Experience/>
+      <Logo/>
       <Footer/>
     </div>
   );
