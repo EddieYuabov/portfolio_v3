@@ -47,6 +47,7 @@
     display: grid;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .popup {
@@ -60,9 +61,9 @@
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
     padding: 10px;
-    border-radius: 20px;
-    height: 405px;
-    width: 600px;
+    border-radius: 25px;
+    height: 345px;
+    width: 495px;
     /* Apply blur effect */
     z-index: -1;
     transition: opacity 0.3s ease, visibility 0.3s ease;
@@ -72,12 +73,12 @@
     display: grid;
     justify-content: center;
     align-items: center;
-    padding: 0px 100px
+    padding: 0px 50px
 }
 
 .popup_text p {
     color: rgb(255, 255, 255);
-    font-size: 20px;
+    font-size: 18px;
     z-index: 0;
     word-spacing: 1px;
     line-height: 1.5;
@@ -92,12 +93,14 @@
 .website-img-layout:hover,
 .project-img-layout:hover {
     img {
-        height: 415px;
-        width: 615px;
+        height: 362px;
+        width: 511px;
+        border-radius: 18px;
     }
 
     .popup {
         z-index: 1;
+        border-radius: 20px;
     }
 }
 
@@ -105,8 +108,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70px;
-    width: 100px;
+    height: 50px;
+    width: 80px;
     padding: 10px 20px;
     background-color: #007bff;
     /* Button color */
@@ -128,20 +131,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 420px;
-    width: 620px;
+    height: 350px;
+    width: 500px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px 1px black;
     margin: 30px;
     border-radius: 20px;
     background-color: rgb(23, 25, 25);
     z-index: 2;
+    gap: 10px;
 }
 
 .website-img-layout img,
 .project-img-layout img {
-    height: 405px;
-    width: 605px;
+    height: 350px;
+    width: 500px;
     border-radius: 20px;
 }
 
@@ -174,7 +178,7 @@
     font-family: 'Nunito', sans-serif;
 }
 
-@media (max-width:1380px) {
+@media (max-width:1180px) {
 
     #projects-layout {
         display: grid;

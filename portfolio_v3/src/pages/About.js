@@ -1,12 +1,36 @@
 import "./About.css"
-import aboutPicture from '../images/AboutPicture.jpeg'; //
+import aboutPicture from '../images/AboutPicture.jpeg'; 
+import React, { useState, useEffect } from "react";
+
 
 
 const About = () => {
+
+    const [isVisible, setIsVisible] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const aboutSection = document.getElementById("about")
+            if (aboutSection) {
+                const { top } = aboutSection.getBoundingClientRect()
+                const windowHeight = window.innerHeight;
+                if (top < windowHeight * 0.5) {
+                    setIsVisible(true)
+                    window.removeEventListener("scroll", handleScroll)
+                }
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll)
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll)
+        }
+    }, [])
     return(
         <div id="about">
             <div id="about-layout">
-                <div className="about_container">
+                <div id="about_container" className={isVisible ? "visible" : "hidden"}>
                     <p id="about-font">ABOUT</p>
                     <p id="about-subfont">WHO I AM</p>
                     <p id="about-par">
@@ -29,7 +53,7 @@ const About = () => {
                     </p>
                 </div>
                 <div id="porfolio-pic-div">
-                    <img id='portfolio-pic' src={aboutPicture} alt="About"/>
+                    <img id='portfolio-pic' className={isVisible ? "visible" : "hidden"} src={aboutPicture} alt="About"/>
                 </div>
             </div>
         </div>

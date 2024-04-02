@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
     font-weight: 300;
+    /* transform: translateY(50px); */
 }
 
 #about-layout {
@@ -13,11 +14,39 @@
     gap: 10px;
 }
 
-.about_container {
+#about-layout .hidden {
+    opacity: 0;
+    transform: translateY(5%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    pointer-events: none;
+}
+
+#about-layout .visible {
+    opacity: 1;
+    transform: translateY(0%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#about-layout .hidden {
+    opacity: 0;
+    transform: translateY(5%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    pointer-events: none;
+}
+
+#about-layout .visible {
+    opacity: 1;
+    transform: translateY(0%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+
+#about_container {
     position: relative;
     padding-left: 0px;
     width: 600px;
 }
+
 
 #about-font {
     font-size: 25px;
@@ -48,6 +77,13 @@
 }
 
 @media (max-width:1180px) {
+
+    #about_container {
+        position: relative;
+        padding-left: 0px;
+        width: 800px;
+    }
+
     #about-layout {
         display: block;
         grid-template-columns: 1fr;
@@ -62,8 +98,8 @@
 
     #portfolio-pic {
         margin-top: 10px;
-        height: 570px;
-        width: 500px;
+        height: 640px;
+        width: 565px;
         box-shadow: 0px 0px 10px 2px;
         margin-bottom: 100px;
     }
@@ -85,12 +121,12 @@
     }
 }
 
-@media (max-width:500px) {
+@media (max-width:840px) {
     #about {
-        padding: 225px 10px 0px 10px;
+        padding: 92px 10px 0px 10px;
     }
 
-    .about-par {
+    #about-par {
         color: #d7d7ff;
         padding: 0px 0% 50px 0%;
         font-size: 18px;
@@ -98,7 +134,35 @@
         line-height: 1.5;  */
     }
 
-    .about_container {
+    #about_container {
+        width: auto;
+    }
+
+    #portfolio-pic {
+        margin-top: 10px;
+        height: 69%;
+        width: 100%;
+        box-shadow: 0px 0px 10px 2px;
+        margin-bottom: 0px;
+        padding: 10;
+    }
+}
+
+
+@media (max-width:500px) {
+    #about {
+        padding: 0px 10px 0px 10px;
+    }
+
+    #about-par {
+        color: #d7d7ff;
+        padding: 0px 0% 50px 0%;
+        font-size: 18px;
+        /* word-spacing: 1px;
+        line-height: 1.5;  */
+    }
+
+    #about_container {
         width: auto;
     }
 

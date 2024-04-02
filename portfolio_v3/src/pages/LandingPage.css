@@ -9,19 +9,19 @@
     z-index: 1;
 }
 
-.name_container {
+#name_container {
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     margin-top: -40px;
     text-align: center;
 }
 
-.name_container span {
+#name_container span {
     color: white;
     font-size: 10.9vw;
     font-weight: 100;
 }
 
-.name_container .descrition span {
+#name_container #descrition span {
     font-size: 30px;
     font-weight: 200;
 }
@@ -34,15 +34,33 @@
     text-align: center;
 }
 
+#name_container .hidden {
+    opacity: 0;
+    transform: translateY(50%);
+    transition: opacity 0.5s ease, transform 0.9s ease;
+    pointer-events: none;
+}
 
-@media (min-width:2250px) {
-    .name_container span {
+#name_container .visible {
+    opacity: 1;
+    transform: translateY(0%);
+    transition: opacity 0.5s ease, transform 0.9s ease;
+}
+
+.scroll_container {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+}
+
+@media (min-width:1250px) {
+    #name_container span {
         color: white;
-        font-size: 245px;
+        font-size: 135px;
         font-weight: 100;
     }
 
-    .name_container .descrition span {
+    #name_container .descrition span {
         font-size: 30px;
         font-weight: 200;
     }
@@ -50,48 +68,11 @@
 
 
 @media (max-width:800px) {
-    .name_container .descrition span {
+    #name_container .descrition span {
         font-size: 3.8vw;
     }
 
 }
-
-/* @media (max-width:1024px) {
-
-    .landing_page_container {
-        background-color: rgb(25, 28, 33);
-        height: 100vh;
-        display: grid;
-        position: relative;
-        padding: 0px 15%;
-        z-index: 1;
-    }
-
-    .name_container {
-        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-        margin-top: 0px;
-        text-align: center;
-    }
-
-    .name_container span {
-        color: white;
-        font-weight: 100;
-    }
-
-    .name_container .descrition span {
-        font-size: 1.8vw;
-    }
-
-    .background_div {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        align-items: center;
-        text-align: center;
-    }
-} */
-
-
 
 
 @media (max-width:500px) {
@@ -103,13 +84,13 @@
         text-align: none;
     }
 
-    .name_container span {
+    #name_container span {
         color: white;
         font-size: 10.9vw;
         font-weight: 100;
     }
 
-    .name_container .descrition span {
+    #name_container .descrition span {
         font-size: 30px;
     }
 }
