@@ -91,7 +91,7 @@
         justify-content: center;
         grid-template-columns: 1fr 1fr;
         background-color: white;
-        border-radius: 75px 10px 75px 10px;
+        border-radius: 10px;
         width: 390px;
         height: 200px;
         box-shadow: 0px 0px 10px 1px;
@@ -114,7 +114,7 @@
         justify-content: center;
         grid-template-columns: 1fr 1fr;
         background-color: white;
-        border-radius: 75px 10px 75px 10px;
+        border-radius: 10px;
         width: 100%;
         height: 110%;
         box-shadow: 0px 0px 10px 1px;
@@ -134,6 +134,14 @@
     #skills-font {
         padding-top: 0px;
         padding-left: 10px;
+    }
+
+    #skills-layout {
+        margin-bottom: 300px;
+    }
+
+    .skill {
+        font-size: 3vw;
     }
 
 }
