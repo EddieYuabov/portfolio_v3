@@ -194,6 +194,78 @@
     #projects-font {
         padding-top: 15%;
     }
+
+    .website-img-layout,
+    .project-img-layout {
+        height: 500px;
+        width: 800px;
+        gap: 10px;
+    }
+
+    .website-img-layout img,
+    .project-img-layout img {
+        height: 500px;
+        width: 800px;
+    }
+
+    .website-img-layout:hover,
+    .project-img-layout:hover {
+        img {
+            height: 500px;
+            width: 800px;
+            border-radius: 18px;
+        }
+
+        .popup {
+            z-index: 1;
+            border-radius: 20px;
+        }
+    }
+
+    .popup {
+        padding: 10px;
+        border-radius: 25px;
+        height: 500px;
+        width: 800px;
+    }
+}
+
+@media (max-width:840px) {
+
+    .website-img-layout,
+    .project-img-layout {
+        height: 90%;
+        width: 98%;
+        gap: 10px;
+        margin: 30px 0px;
+    }
+
+    .website-img-layout img,
+    .project-img-layout img {
+        height: 100%;
+        width: 98%;
+    }
+
+    .website-img-layout:hover,
+    .project-img-layout:hover {
+        img {
+            height: 100%;
+            width: 98%;
+            border-radius: 18px;
+        }
+
+        .popup {
+            z-index: 1;
+            border-radius: 20px;
+        }
+    }
+
+    .popup {
+        padding: 10px;
+        border-radius: 25px;
+        height: 100%;
+        width: 98%;
+    }
 }
 
 @media (max-width:500px) {

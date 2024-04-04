@@ -143,41 +143,4 @@
     .skill {
         font-size: 3vw;
     }
-
-}
-
-@media (max-width:500px) {
-    #skills-layout {
-        grid-template-columns: 1fr 1fr;
-        padding: 0px;
-    }
-
-    #skills-font {
-        padding-left: 20px;
-    }
-
-    #skills-subfont {
-        padding-left: 20px;
-    }
-
-    .skill-container {
-        grid-template-columns: 1fr;
-    }
-
-    .img_container {
-        padding-top: 20px;
-    }
-
-    #skills {
-        display: block;
-    }
-
-    .skill-img {
-        height: 100%;
-        width: 100%;
-    }
-
-    .skill {
-        font-size: 25px;
-    }
 }

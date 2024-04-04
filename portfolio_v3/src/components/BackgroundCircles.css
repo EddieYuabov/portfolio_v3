@@ -95,24 +95,23 @@
     .slider-thumb-1 {
         margin-left: -45%;
         margin-top: 0px;
-        width: 250px;
-        height: 250px;
+        width: 50%;
+        height: 20%;
         filter: blur(20px);
     }
 
     .slider-thumb-2 {
         margin-left: 0px;
         margin-top: 300px;
-        width: 250px;
-        height: 250px;
+        width: 50%;
+        height: 20%;
         filter: blur(20px);
     }
 
     .slider-thumb-3 {
-        width: 250px;
-        height: 250px;
-        margin-top: 0px;
-        margin-left: 50%;
+        width: 50%;
+        height: 20%;
+        margin-left: 35%;
         filter: blur(20px);
     }
 }
